@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Message Chat Box - Bootsnipp.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../assets/css/chat.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+  <link href="../assets/dist/emojionearea.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/chat.css" media="none" onload="if(media!='all')media='all'">
+  
+</head>
+
+<body onload="inisiasi()">
+  <!--Navbar -->
+  <nav class="mb-1 navbar navbar-expand-lg navbar-dark info-color">
+    <a class="navbar-brand" href="#"><b>KULIAH koding | </b> shadiq al mughni</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <div id="navigasi">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-default"
+              aria-labelledby="navbarDropdownMenuLink-333">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <!--/.Navbar -->
+
+
+
+  <div class="container">
+    <br>
+    <div class="messaging">
+      <div class="inbox_msg">
+        <div class="inbox_people">
+          <div class="headind_srch">
+            <div class="recent_heading">
+              <i style="cursor: pointer;" class="fas fa-plus" aria-hidden="true"> Tambah teman</i>
+            </div>
+            <div class="srch_bar">
+              <div class="stylish-input-group">
+                <input type="text" id="keyword" class="search-bar" onkeyup="cariTemanObrolan()"
+                  placeholder="Cari Obrolan">
+                <span class="input-group-addon">
+                  <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                </span> </div>
+            </div>
+          </div>
+          <div class="inbox_chat">
+            <div id="daftarObrolan">
+
+            </div>
+          </div>
+        </div>
+        <div class="mesgs">
+          <div class="msg_history">
+            <div id="historiObrolan">
+            </div>
+            
+            <div id="formKirimPesan">
+              <div class="type_msg">
+                <div class="input_msg_write">
+                  <input type="text" class="write_msg" id="pesan" onkeydown="listen()" placeholder="Ketikkan sebuah pesan" />
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- Modal tambah teman-->
+  <div class="modal fade" id="tambahTeman" tabindex="-1" role="dialog" aria-labelledby="tambahTeman" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content">
+        <!--Header-->
+        <div class="modal-header">
+          <p class="heading lead">Tambah Teman</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="white-text">&times;</span>
+          </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body">
+        </div>
+        <!--Footer-->
+        <div class="modal-footer">
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!-- Modal tambah teman-->
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+</script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../assets/dist/emojionearea.js">
+</script>
+<script type="text/javascript" src="../assets/js/chat.js"></script>
+
+</body>
+
+</html>
